@@ -94,6 +94,7 @@ emailInput.setAttribute("type", "email");
 emailInput.setAttribute("placeholder", "yourEmail@email.com");
 phoneInput.setAttribute("type", "tel");
 phoneInput.setAttribute("placeholder", "555-555-5555");
+phoneInput.setAttribute("pattern", "[0-9]{3}-[0-9]{3}-[0-9]{4}");
 submitInput.setAttribute("type", "submit");
 submitInput.setAttribute("value", "Submit");
 closePop.setAttribute("type", "button");
@@ -129,9 +130,9 @@ signUpPop.style.opacity = "0";
 
 signUpForm.style.display = "flex"
 signUpForm.style.flexDirection = "column";
-signUpForm.style.justifyContent = "space-between";
-signUpForm.style.alignItems = "space-between";
-signUpForm.querySelectorAll("input").forEach(input => input.style.marginBottom = "30px");
+signUpForm.style.justifyContent = "space-around";
+signUpForm.style.alignItems = "space-around";
+signUpForm.querySelectorAll("input").forEach(input => input.style.marginBottom = "20px");
 
 closePop.style.position = "absolute";
 closePop.style.top = "0";
